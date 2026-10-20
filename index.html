@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>New York Burger — Reportes</title>
+    <link rel="stylesheet" href="./css/app.css?v=2" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#7f1d1d" />
+  </head>
+  <body>
+    <!-- Blocking PIN gate (reportes-access). -->
+    <div id="pin-root" class="pin-root"></div>
+
+    <!-- Sales report view (reportes-sales-view): hidden while locked,
+         shown once the owner unlocks (main.js toggles `hidden` based on
+         auth.status). No service worker is ever registered here (design
+         Decision 6 / reportes-pwa-shell): shell updates rely on the
+         version query string above and on js/main.js below, bumped by
+         hand in the same commit as any change to that asset's content
+         (see docs/reportes.md). -->
+    <main id="report-root" class="report-root" hidden aria-label="Reporte de ventas"></main>
+
+    <script type="module" src="./js/main.js?v=1"></script>
+  </body>
+</html>
