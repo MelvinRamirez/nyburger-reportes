@@ -1,7 +1,7 @@
 // Set after the NYBurger backend's Apps Script Web App is deployed — see
 // NYBurger/docs/backend-deployment.md for the deployment procedure. Same
 // /exec as nyburger-caja.
-export const API_URL = 'https://script.google.com/macros/s/<SET_AFTER_NYBURGER_BACKEND_DEPLOY>/exec';
+export const API_URL = 'https://script.google.com/macros/s/AKfycbz6KDvZAfcQVXnB-KsobmlHv8l78CClJoMXfSlz3BZsY4ev02DOToYPlASqOZ2-twZ8WQ/exec';
 export const VERIFY_TIMEOUT_MS = 15000; // no lock, no Sheets
 export const REPORT_TIMEOUT_MS = 60000; // listing + up to ~9 reads, cold start, margin
 export const WINDOW_DAYS = 7;
